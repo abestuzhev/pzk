@@ -1,0 +1,117 @@
+.footer {
+    background-color: #121214;
+    height: 290px;
+    color: #ffffff;
+    padding: 30px 0;
+
+    &::after {
+        content: '';
+    }
+
+    &-grid {
+
+        &::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+    }
+
+    &-col {
+        float: left;
+        &:nth-child(1) {
+            width: 350px;
+        }
+        
+        &:nth-child(2) {
+            width: 30%;
+            padding: 24px 0;
+        }
+        
+        &:nth-child(3) {
+            padding: 24px 0;
+            width: 25%;
+            float: right;
+            text-align: right;
+        }
+    }
+
+    &-logo {
+        max-width: 350px;
+        margin-bottom: 4px;
+    }
+
+    &-address {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        max-width: 64%;
+    }
+
+    &-menu {
+        font-family: Akrobat, sans-serif;
+
+        &__item {
+            margin-bottom: 14px;
+        }
+
+        &__link {
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 1;
+            padding: 10px 14px;
+            text-decoration: none;
+        }
+    }
+
+    &-social {
+        font-family: Akrobat, sans-serif;
+        margin-bottom: 24px;
+        &__title {
+            display: inline-block;
+            font-size: 11px;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        &__item {
+
+        }
+
+    }
+
+    &-contact {
+        font-family: Akrobat, sans-serif;
+        &__title {
+            font-size: 18px;
+            color: #ccc;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        &__list {
+
+        }
+
+        &__item {
+            margin-bottom: 8px;
+            a {
+                display: inline-block;
+                color: #ffffff;
+                font-size: 24px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &-copyright {
+        p {
+            font-size: 11px;
+            margin-bottom: 3px;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+        }
+    }
+
+
+}
