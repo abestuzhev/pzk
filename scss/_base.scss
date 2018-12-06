@@ -1,9 +1,9 @@
 .c-layout {
     position: relative;
     width: 100%;
-    max-width: 1155px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 22px;
+    padding: 0 13px;
 
     &::after {
         content: '';
@@ -52,7 +52,7 @@ a {
     min-height: 100%;
     height: auto !important;
     overflow: hidden;
-    margin-bottom: -290px;
+    margin-bottom: -225px;
 
     &:after {
         content: "";
