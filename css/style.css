@@ -1287,7 +1287,9 @@ a {
 
 .footer {
   background-color: #f3f3f3;
-  height: 225px; }
+  height: 225px;
+  -webkit-box-shadow: -0.763px -3.927px 7px 0px rgba(0, 0, 0, 0.17);
+          box-shadow: -0.763px -3.927px 7px 0px rgba(0, 0, 0, 0.17); }
 
 .c-title {
   font-size: 48px;
@@ -1314,13 +1316,16 @@ a {
             justify-content: space-between;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    margin-left: -35px;
+    margin-right: -35px; }
     .services-list__item {
       width: 50%;
       padding: 35px; }
   .services-card {
     min-height: 290px;
-    position: relative; }
+    position: relative;
+    background-size: cover; }
     .services-card__body {
       position: absolute;
       bottom: 25px;
@@ -1359,7 +1364,9 @@ a {
             justify-content: space-between;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    margin-left: -35px;
+    margin-right: -35px; }
     .advantages-list__item {
       width: 50%;
       padding: 35px; }
@@ -1388,3 +1395,121 @@ a {
       font-size: 18px;
       color: #302f2f;
       line-height: 1.2; }
+
+/*stage-----------------*/
+.stage {
+  background: url(../img/stage-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  padding: 55px 0 20px; }
+  .stage-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .stage-list__item {
+      margin-bottom: 20px; }
+    .stage-list__arrow {
+      margin-top: 23px;
+      white-space: nowrap; }
+      .stage-list__arrow .icon-arrow-next:first-child {
+        opacity: .5; }
+  .stage-card {
+    text-align: center;
+    color: #ffffff; }
+    .stage-card__img {
+      text-align: center;
+      margin-bottom: 16px; }
+    .stage-card__title {
+      font-size: 24px;
+      margin-bottom: 12px; }
+    .stage-card__text {
+      max-width: 230px;
+      font-size: 18px; }
+  .stage .c-title {
+    color: #ffffff;
+    border-color: #ffffff;
+    margin-bottom: 35px; }
+
+.icon-arrow-next {
+  display: inline-block;
+  width: 23px;
+  height: 43px;
+  background: url(../img/arrow-next.png) 0 0 no-repeat; }
+
+/*license-----------------*/
+.license {
+  background: url(../img/license-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  padding: 55px 0 20px; }
+  .license-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .license-list__item {
+      margin-bottom: 20px; }
+  .license-card {
+    text-align: center;
+    color: #ffffff; }
+    .license-card__img {
+      text-align: center;
+      margin-bottom: 16px; }
+  .license .c-title {
+    margin-bottom: 55px; }
+
+/*license-----------------*/
+.partner {
+  background-color: #fff;
+  padding: 55px 0 20px; }
+  .partner-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .partner-list__item {
+      width: 25%;
+      margin-bottom: 20px; }
+  .partner-card {
+    text-align: center;
+    color: #ffffff; }
+    .partner-card__img {
+      text-align: center;
+      margin-bottom: 16px; }
+  .partner .c-title {
+    margin-bottom: 55px; }
+
+/*portfolio-----------------*/
+.portfolio-card {
+  padding: 35px 22px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 5px 35.34px 2.66px rgba(0, 0, 0, 0.19);
+          box-shadow: 0px 5px 35.34px 2.66px rgba(0, 0, 0, 0.19); }
+  .portfolio-card__item span {
+    color: #ea2830; }

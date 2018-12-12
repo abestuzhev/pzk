@@ -55,6 +55,8 @@ function showPopup(icon, popup) {
 }
 
 $(function(){
+    
+    
 
 
     $(window).on('load',function() {
