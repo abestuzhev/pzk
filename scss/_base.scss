@@ -57,7 +57,7 @@ a {
     &:after {
         content: "";
         display: block;
-        height: 290px;
+        height: 244px;
     }
 
     input {
@@ -528,65 +528,7 @@ a {
     }
 }
 
-.c-card-filter {
-    position: relative;
-    &__title {
-        cursor: pointer;
-    }
 
-    &__icon {
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .symbol-arrow-up, .symbol-arrow-down {
-        font-size: 13px;
-    }
-
-    &.active {
-        .c-card-filter__body {
-            display: block;
-        }
-    }
-
-    &__body {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #fff;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        padding: 14px 10px;
-        margin-top: 6px;
-        width: 200px;
-        z-index: 10;
-    }
-
-    &__item {
-        margin-bottom: 8px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-.c-show-more {
-    text-align: center;
-    margin-bottom: 30px;
-
-    &__btn {
-        display: inline-block;
-        text-decoration: none;
-        font-size: 18px;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-family: Roboto, sans-serif;
-        background-color: #000;
-        padding: 24px 50px;
-    }
-}
 
 .c-btn {
 
@@ -594,12 +536,24 @@ a {
     text-align: center;
     display: inline-block;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
-    text-transform: uppercase;
     font-family: Roboto, sans-serif;
-    background-color: #000;
-    padding: 20px 70px;
+    background-color: #eb343e;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+
+    &::after {
+        content: '';
+        border: none;
+    }
+
+    &:hover {
+        border: none;
+        color: #ffffff;
+        background-color: #d3333c;
+    }
 
     &-layout {
         margin-bottom: 30px;
@@ -662,144 +616,6 @@ a {
     }
 }
 
-.c-carousel {
-
-}
-
-/*иконки*/
-.c-symbol {
-    display: inline-block;
-    vertical-align: middle;
-    fill: #000;
-}
-
-.symbol-search {
-    font-size: 16px;
-    width: 1em;
-    height: 1em;
-}
-
-.symbol-basket {
-    font-size: 23px;
-    width: 1em;
-    height: 1.3em;
-}
-
-/* Ширина слайдера */
-.range-slider {
-    padding-bottom: 8px;
-}
-
-.range-slider .formCost::after {
-    content: '';
-    clear: both;
-    display: table;
-}
-
-.range-slider input {
-    //display: inline-block;
-    float: left;
-    width: 42%;
-    vertical-align: middle;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-    padding: 8px 10px;
-}
-
-.range-slider span {
-    float: left;
-    padding: 0 5px;
-    line-height: 33px
-}
-
-.range-slider label {
-    vertical-align: middle;
-}
-
-.range-slider_default {
-    width: 92%;
-}
-
-.formCost {
-    margin-bottom: 20px;
-}
-
-/* Контейнер слайдера */
-.ui-slider {
-    position: relative;
-}
-
-/* Ползунок */
-.ui-slider .ui-slider-handle {
-    position: absolute;
-    z-index: 2;
-    width: 18px;
-    /* Задаем нужную ширину */
-    height: 18px;
-    /* и высоту */
-    border-radius: 20px;
-    background-color: #fff;
-    border: 1px solid #d1d2d2;
-    color: #d1d2d2;
-    cursor: pointer;
-}
-
-.ui-slider .ui-slider-handle:focus {
-    border: 1px solid #d1d2d2;
-    outline: none;
-}
-
-.ui-slider .ui-slider-range {
-    position: absolute;
-    z-index: 1;
-    font-size: .7em;
-    display: block;
-    border: 0;
-    overflow: hidden;
-}
-
-/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
-.ui-slider-horizontal {
-    height: 3px;
-    /* задаем высоту согласно дизайна */
-}
-
-/* позиционируем ползунки */
-.ui-slider-horizontal .ui-slider-handle {
-    top: -7px;
-    margin-left: -6px;
-}
-
-.ui-slider-horizontal .ui-slider-range {
-    top: 0;
-    height: 4px;
-}
-
-.ui-slider-horizontal .ui-slider-range-min {
-    left: 0;
-}
-
-.ui-slider-horizontal .ui-slider-range-max {
-    right: 0;
-}
-
-/* оформление полосы по которой ходит ползунок */
-.ui-widget-content {
-    background-color: #cdd2d9;
-}
-
-/* оформление активного участка (между двумя ползунками) */
-.ui-widget-header {
-    background: #ff9f00;
-}
-
-/* скругление для полосы слайдера */
-.ui-corner-all {
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-}
 
 /*tabs*/
 
@@ -856,63 +672,6 @@ a {
 
 }
 
-.c-reviews {
-    font-family: Roboto, sans-serif;
-    &__list {
-        margin-bottom: 10px;
-    }
-
-    &__item {
-        margin-bottom: 34px;
-    }
-
-    &-card {
-
-        font-size: 18px;
-        &__header {
-            margin-bottom: 10px;
-        }
-
-        &__name {
-            color: #3c3c3c;
-            font-size: 24px;
-            font-weight: 700;
-            display: inline-block;
-            margin-right: 4px;
-        }
-
-        &__date {
-            color: #aeaeae;
-            display: inline-block;
-        }
-
-        &__text {
-            color: #6a6a6a;
-            line-height: 1;
-        }
-    }
-
-    &-form {
-        &__title {
-            color: #333232;
-            font-size: 24px;
-            letter-spacing: 1.7px;
-            font-weight: 400;
-            margin-bottom: 10px;
-        }
-
-        &__list {
-            margin-bottom: 20px;
-        }
-
-        &__item {
-            margin-bottom: 10px;
-            textarea {
-
-            }
-        }
-    }
-}
 
 
 .wrapper .c-counter {
@@ -1403,4 +1162,29 @@ a {
 
 .swiper-pagination-bullet-active {
     background-color: #000 !important;
+}
+
+
+.slick-prev, .slick-next {
+    width: 47px;
+    height: 47px;
+}
+
+.slick-next {
+    background: url(../img/slider-arrow-next.png) 0 0 no-repeat;
+
+    &:before {
+        content: '';
+        display: none;
+    }
+    right: 0;
+}
+.slick-prev {
+    background: url(../img/slider-arrow-prev.png) 0 0 no-repeat;
+
+    &:before {
+        content: '';
+        display: none;
+    }
+    display: none !important;
 }

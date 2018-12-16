@@ -8,14 +8,14 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+    <!--<link rel="manifest" href="site.webmanifest">-->
+    <!--<link rel="apple-touch-icon" href="icon.png">-->
     <!-- Place favicon.ico in the root directory -->
 
     <!--<link rel="stylesheet" href="./css/normalize.css">-->
 
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./js/slick/slick.css">
+    <link rel="stylesheet" href="./js/slick/slick-theme.css">
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -30,15 +30,45 @@
 
 <div class="wrapper">
     <header class="header">
-
-    </header>
         <div class="c-layout">
+            <div class="header-body">
+                <div class="header-logo"><a href=""><img src="./img/logo.png" alt="ПЗК"></a></div>
+                <ul class="header-menu">
+                    <li class="header-menu__item">
+                        <a href="#">О нас</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#">Займы</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#">Сбережения</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#">Страхование</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#">Инвестиции</a>
+                    </li>
+
+                </ul>
+                <div class="header-contact">
+                    <div class="header-phone"><a href="+7495777777">+7(495)777-777</a></div>
+                    <div class="header-callback"><a href="#" class="c-btn c-btn-default">Написать нам</a></div>
+                </div>
+                <a href="#" class="header-mobile-btn"></a>
+            </div>
 
         </div>
+    </header>
+
     <main>
         <div class="home">
             <div class="banner">
                 <div class="c-layout">
+                    <div class="banner-body">
+                        <a href="#" class="banner-link">Надежное</a> кредитование малого и среднего бизнеса <span>в России</span>
+
+                    </div>
 
                 </div>
             </div>
@@ -242,7 +272,7 @@
             </div>
             <div class="partner">
                 <div class="c-layout">
-                    <div class="c-title">Наши лицензии</div>
+                    <div class="c-title">Наши партнеры</div>
                     <ul class="partner-list">
                         <li class="partner-list__item">
                             <div class="partner-card">
@@ -269,24 +299,246 @@
             </div>
             <div class="portfolio">
                 <div class="c-layout">
-                    <div class="c-title">Наши лицензии</div>
+                    <div class="c-title">Портфолио "Недавние сделки"</div>
                     <ul class="portfolio-list">
                         <li class="portfolio-list__item">
                             <div class="portfolio-card">
                                 <ul class="portfolio-card__list">
                                     <li class="portfolio-card__item">
-                                        <span>Заявка:</span> Получение 300 000 рублей под залог недвижимости
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-contract.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Заявка:</span> Получение 300 000 рублей под залог недвижимости
+                                        </div>
                                     </li>
                                     <li class="portfolio-card__item">
-                                        <span>Срок рассмотрения:</span> 3 рабочих дня
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-stopwatch.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Срок рассмотрения:</span> 3 рабочих дня
+                                        </div>
                                     </li>
                                     <li class="portfolio-card__item">
-                                        <span>Решение по заявке:</span> Одобрено
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-success.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Решение по заявке:</span> Одобрено
+                                        </div>
                                     </li>
                                     <li class="portfolio-card__item">
-                                        <span>Условия:</span> 3% годовых, срок - 5 лет
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-calculator.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Условия:</span> 3% годовых, срок - 5 лет
+                                        </div>
                                     </li>
                                 </ul>
+                            </div>
+                        </li>
+                        <li class="portfolio-list__item">
+                            <div class="portfolio-card">
+                                <ul class="portfolio-card__list">
+                                    <li class="portfolio-card__item">
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-contract.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Заявка:</span> Получение 300 000 рублей под залог недвижимости
+                                        </div>
+                                    </li>
+                                    <li class="portfolio-card__item">
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-stopwatch.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Срок рассмотрения:</span> 3 рабочих дня
+                                        </div>
+                                    </li>
+                                    <li class="portfolio-card__item">
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-success.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Решение по заявке:</span> Одобрено
+                                        </div>
+                                    </li>
+                                    <li class="portfolio-card__item">
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-calculator.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Условия:</span> 3% годовых, срок - 5 лет
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="portfolio-list__item">
+                            <div class="portfolio-card">
+                                <ul class="portfolio-card__list">
+                                    <li class="portfolio-card__item">
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-contract.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Заявка:</span> Получение 300 000 рублей под залог недвижимости
+                                        </div>
+                                    </li>
+                                    <li class="portfolio-card__item">
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-stopwatch.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Срок рассмотрения:</span> 3 рабочих дня
+                                        </div>
+                                    </li>
+                                    <li class="portfolio-card__item">
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-success.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Решение по заявке:</span> Одобрено
+                                        </div>
+                                    </li>
+                                    <li class="portfolio-card__item">
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-calculator.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Условия:</span> 3% годовых, срок - 5 лет
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="portfolio-list__item">
+                            <div class="portfolio-card">
+                                <ul class="portfolio-card__list">
+                                    <li class="portfolio-card__item">
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-contract.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Заявка:</span> Получение 300 000 рублей под залог недвижимости
+                                        </div>
+                                    </li>
+                                    <li class="portfolio-card__item">
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-stopwatch.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Срок рассмотрения:</span> 3 рабочих дня
+                                        </div>
+                                    </li>
+                                    <li class="portfolio-card__item">
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-success.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Решение по заявке:</span> Одобрено
+                                        </div>
+                                    </li>
+                                    <li class="portfolio-card__item">
+                                        <div class="portfolio-card__icon">
+                                            <img src="./img/icon-calculator.png" alt="">
+                                        </div>
+                                        <div class="portfolio-card__body">
+                                            <span>Условия:</span> 3% годовых, срок - 5 лет
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="reviews">
+                <div class="c-layout">
+                    <div class="c-title">Отзывы</div>
+                    <ul class="reviews-list">
+                        <li class="reviews-list__item">
+                            <div class="reviews-card">
+                                <div class="reviews-card__user"><img src="./img/rev-user.png" alt=""></div>
+                                <div class="reviews-card__body">
+                                    <div class="reviews-card__title">Татьяна, 31 год</div>
+                                    <div class="reviews-card__body">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at aut commodi, dolorem eum id labore magni, maiores molestias porro quos tenetur? Aperiam aut blanditiis error repellat sunt suscipit ullam!
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reviews-list__item">
+                            <div class="reviews-card">
+                                <div class="reviews-card__user"><img src="./img/rev-user.png" alt=""></div>
+                                <div class="reviews-card__body">
+                                    <div class="reviews-card__title">Татьяна, 31 год</div>
+                                    <div class="reviews-card__body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at aut commodi, dolorem eum id labore magni, maiores molestias porro quos tenetur? Aperiam aut blanditiis error repellat sunt suscipit ullam!
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reviews-list__item">
+                            <div class="reviews-card">
+                                <div class="reviews-card__user"><img src="./img/rev-user.png" alt=""></div>
+                                <div class="reviews-card__body">
+                                    <div class="reviews-card__title">Татьяна, 31 год</div>
+                                    <div class="reviews-card__body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at aut commodi, dolorem eum id labore magni, maiores molestias porro quos tenetur? Aperiam aut blanditiis error repellat sunt suscipit ullam!
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reviews-list__item">
+                            <div class="reviews-card">
+                                <div class="reviews-card__user"><img src="./img/rev-user.png" alt=""></div>
+                                <div class="reviews-card__body">
+                                    <div class="reviews-card__title">Татьяна, 31 год</div>
+                                    <div class="reviews-card__body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at aut commodi, dolorem eum id labore magni, maiores molestias porro quos tenetur? Aperiam aut blanditiis error repellat sunt suscipit ullam!
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="c-layout">
+                    <div class="c-title">Новости</div>
+                    <ul class="news-list">
+                        <li class="news-list__item">
+                            <div class="news-card">
+                                <div class="news-card__date">03.12.2018</div>
+                                <div class="news-card__img">
+                                    <img src="./img/news-post.png" alt="">
+                                </div>
+                                <div class="news-card__title">Заголовок новости на 2 строки для примера</div>
+                            </div>
+                        </li>
+                        <li class="news-list__item">
+                            <div class="news-card">
+                                <div class="news-card__date">03.12.2018</div>
+                                <div class="news-card__img">
+                                    <img src="./img/news-post.png" alt="">
+                                </div>
+                                <div class="news-card__title">Заголовок новости на 2 строки для примера</div>
+                            </div>
+                        </li>
+                        <li class="news-list__item">
+                            <div class="news-card">
+                                <div class="news-card__date">03.12.2018</div>
+                                <div class="news-card__img">
+                                    <img src="./img/news-post.png" alt="">
+                                </div>
+                                <div class="news-card__title">Заголовок новости на 2 строки для примера</div>
                             </div>
                         </li>
 
@@ -299,24 +551,85 @@
 
 </div>
 <footer class="footer">
+    <div class="c-layout">
+        <div class="footer-body">
+            <div class="footer-logo"><a href="#"><img src="./img/logo.png" alt=""></a></div>
+            <div class="footer-menu">
+                <div class="footer-menu__col">
+                    <div class="footer-menu__title">Займы</div>
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-list__item">
+                            <a href="#">Краткосрочные</a>
+                        </li>
+                        <li class="footer-menu-list__item">
+                            <a href="#">Долгосрочные</a>
+                        </li>
+                        <li class="footer-menu-list__item">
+                            <a href="#">Беспроцентные</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu__col">
+                    <div class="footer-menu__title">Виды сбережений</div>
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-list__item">
+                            <a href="#">Счёт в банке</a>
+                        </li>
+                        <li class="footer-menu-list__item">
+                            <a href="#">Ценные бумаги</a>
+                        </li>
+                        <li class="footer-menu-list__item">
+                            <a href="#">Недвижимость</a>
+                        </li>
+                        <li class="footer-menu-list__item">
+                            <a href="#">Страхование</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu__col">
+                    <div class="footer-menu__title">Страхование</div>
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-list__item">
+                            <a href="#">Имущественное</a>
+                        </li>
+                        <li class="footer-menu-list__item">
+                            <a href="#">Личное</a>
+                        </li>
+                        <li class="footer-menu-list__item">
+                            <a href="#">Специальные</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu__col">
+                    <div class="footer-menu__title">Виды инвестиций</div>
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-list__item">
+                            <a href="#">С целью пополнения капитала</a>
+                        </li>
+                        <li class="footer-menu-list__item">
+                            <a href="#">Заёмные</a>
+                        </li>
+                        <li class="footer-menu-list__item">
+                            <a href="#">Гибридная форма</a>
+                        </li>
+                    </ul>
+                </div>
 
+            </div>
+            <div class="footer-contact">
+                <div class="footer-phone"><a href="+7495777777">+7(495)777-777</a></div>
+                <div class="footer-callback"><a href="#" class="c-btn c-btn-default">Написать нам</a></div>
+            </div>
+        </div>
+        <div class="footer-copyright">© 2018. Все права защищены</div>
+    </div>
 </footer>
 
 
-<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
-
 <script src="./js/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,117 +1,83 @@
 .footer {
-    background-color: #121214;
-    height: 290px;
-    color: #ffffff;
-    padding: 30px 0;
+    padding: 20px 0;
+    background-color: #f3f3f3;
+    box-shadow: -0.763px -3.927px 7px 0px rgba(0, 0, 0, 0.17);
 
-    &::after {
-        content: '';
-    }
-
-    &-grid {
-
-        &::after {
-            content: '';
-            clear: both;
-            display: table;
-        }
-    }
-
-    &-col {
-        float: left;
-        &:nth-child(1) {
-            width: 350px;
-        }
-        
-        &:nth-child(2) {
-            width: 30%;
-            padding: 24px 0;
-        }
-        
-        &:nth-child(3) {
-            padding: 24px 0;
-            width: 25%;
-            float: right;
-            text-align: right;
-        }
+    &-body {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     &-logo {
-        max-width: 350px;
-        margin-bottom: 4px;
-    }
 
-    &-address {
-        font-size: 11px;
-        letter-spacing: 1.5px;
-        max-width: 64%;
     }
 
     &-menu {
-        font-family: Akrobat, sans-serif;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        &__col {
+            margin-right: 40px;
+            margin-bottom: 20px;
 
-        &__item {
-            margin-bottom: 14px;
+            &:last-child {
+                margin-right: 0;
+            }
         }
 
-        &__link {
-            color: #ffffff;
+        &__title {
             font-size: 20px;
-            line-height: 1;
-            padding: 10px 14px;
-            text-decoration: none;
-        }
-    }
-
-    &-social {
-        font-family: Akrobat, sans-serif;
-        margin-bottom: 24px;
-        &__title {
-            display: inline-block;
-            font-size: 11px;
-            line-height: 1;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        &__item {
+            color: #0173a9;
+            margin-bottom: 13px;
+            white-space: nowrap;
 
         }
 
-    }
+        &-list {
+            &__item {
+                margin-bottom: 13px;
 
-    &-contact {
-        font-family: Akrobat, sans-serif;
-        &__title {
-            font-size: 18px;
-            color: #ccc;
-            margin-bottom: 4px;
-            text-transform: uppercase;
-        }
+                a {
+                    font-size: 16px;
+                    color: #101010;
+                    text-decoration: none;
+                    white-space: nowrap;
 
-        &__list {
-
-        }
-
-        &__item {
-            margin-bottom: 8px;
-            a {
-                display: inline-block;
-                color: #ffffff;
-                font-size: 24px;
-                text-decoration: none;
+                    &:hover {
+                        color: #eb343e;
+                    }
+                }
             }
         }
     }
 
-    &-copyright {
-        p {
-            font-size: 11px;
-            margin-bottom: 3px;
-            letter-spacing: 1.5px;
-            color: #ffffff;
+    &-contact {
+
+    }
+
+    &-callback {
+
+        a {
+            width: 100%;
         }
     }
 
+    &-phone {
+        margin-bottom: 10px;
+        a {
+            font-size: 24px;
+            color: #0173a8;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
 
+    &-copyright {
+        text-align: center;
+        font-size: 16px;
+        color: #161616;
+    }
 }
