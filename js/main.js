@@ -104,6 +104,58 @@ $(function(){
         ]
     });
 
+    $("#credit-range").ionRangeSlider({
+        skin: "big",
+        grid: true,
+        min: 500000,
+        max: 10000000,
+        from: 100000,
+        step: 10000,
+        prettify_enabled: true,
+        prettify_separator: " "
+    });
+
+    $("#credit-term").ionRangeSlider({
+        skin: "big",
+        grid: true,
+        min: 3,
+        max: 240,
+        from: 3,
+        step: 1
+    });
+
+    $('#credit-range').on('change', function(){
+        // var valRange = $(this).data("ionRangeSlider");
+        var valRange = $(this).val();
+        $(this).siblings('.calculator-range__result').find('.calculator-range__num').html(valRange);
+
+    });
+
+    $('#credit-term').on('change', function(){
+        // var valRange = $(this).data("ionRangeSlider");
+        var valRange = $(this).val();
+        $(this).siblings('.calculator-range__result').find('.calculator-range__num').html(valRange);
+        var creditTerm = $("#credit-term").data("ionRangeSlider");
+
+        if(valRange > 12){
+            valRange = valRange / 12;
+            $(this).siblings('.calculator-range__result').find('span').html(valRange);
+            $(this).siblings('.calculator-range__result').find('.calculator-range__unit').html('лет');
+
+
+            // creditTerm.update({
+            //     step:12
+            // });
+        }else {
+            $(this).siblings('.calculator-range__result').find('.calculator-range__unit').html('мес.');
+            // creditTerm.update({
+            //     step:1
+            // });
+        }
+
+    });
+
+
     // $('.license-list').slick({
     //     infinite: true,
     //     speed: 300,

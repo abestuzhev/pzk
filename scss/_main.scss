@@ -478,6 +478,216 @@
             line-height: 1;
         }
     }
+}
+
+/*-------------------------------*/
+/*offer-------------------------*/
+/*-------------------------------*/
+.offer {
+    position: relative;
+    min-height: 500px;
+    &-banner {
+        font-size: 18px;
+        color: #373737;
+        background: url(../img/home-bg.jpg) 0 0 no-repeat;
+        background-size: cover;
+
+        a {
+            display: inline-block;
+            color: #007aa6;
+            margin-bottom: 16px;
+        }
+
+        .c-title {
+            margin-bottom: 30px;
+            border-color: #ea2830;
+        }
+
+        &__body {
+            padding: 60px 0;
+
+        }
+
+        &__text {
+            max-width: 550px;
+        }
+
+        &__note {
+            color: #ea2830;
+
+            a {
+                color: #ea2830;
+            }
+        }
 
 
+        p {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+/*benefits-----------------------*/
+.benefits {
+    padding: 40px 0 10px;
+    background: url(../img/advantages-bg-2.jpg) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    .c-title {
+        margin-bottom: 60px;
+        line-height: 1;
+    }
+
+    &-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &__item {
+            width: 25%;
+            padding: 0 10px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &-card {
+        text-align: center;
+        &__img {
+            text-align: center;
+            margin-bottom: 16px
+        }
+
+        &__text {
+            max-width: 210px;
+            font-size: 18px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+/*calculator------------------------*/
+.calculator {
+    padding: 40px 0;
+    background: rgb(235,50,60);
+    background: -moz-linear-gradient(left, rgba(235,50,60,1) 0%, rgba(1,115,169,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(235,50,60,1) 0%,rgba(1,115,169,1) 100%);
+    background: linear-gradient(to right, rgba(235,50,60,1) 0%,rgba(1,115,169,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb323c', endColorstr='#0173a9',GradientType=1 );
+
+
+    .c-title {
+        margin-bottom: 50px;
+        color: #fff;
+        border-color: #fff;
+    }
+
+    &-range {
+        &__result {
+            font-size: 18px;
+            color: #ffffff;
+            margin-bottom: 12px;
+
+            span {
+                font-weight: 700;
+                font-size: 27px;
+            }
+        }
+
+        &__item {
+            margin-bottom: 30px;
+        }
+
+        &__total {
+            text-align: center;
+            color: #ffffff;
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 60px;
+        }
+
+    }
+
+    .c-btn {
+        padding: 12px 60px;
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+
+    .c-col:nth-child(2) {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &-info {
+        color: #ffffff;
+    }
+}
+
+
+/*scheme-------------------*/
+.scheme {
+    padding: 40px 0;
+    background: url(../img/scheme-bg.jpg) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    .c-title {
+        margin-bottom: 50px;
+    }
+
+    &-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        &__item {
+            margin-bottom: 35px;
+        }
+
+        &__arrow {
+            margin-top: 100px;
+            width: 43px;
+            height: 43px;
+            background: url(../img/icon-double-left.png) 0 0 no-repeat;
+
+            &:last-child {
+                opacity: 0;
+            }
+        }
+    }
+
+    &-card {
+        text-align: center;
+        &__img {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 12px;
+            max-width: 295px;
+        }
+
+        &__text {
+            max-width: 230px;
+            font-size: 18px;
+            margin: 0 auto;
+        }
+    }
+}
+
+/*document--------------------*/
+.document {
+    padding: 15px 0 30px;
+
+
+    .c-title {
+        margin-bottom: 50px;
+    }
 }
