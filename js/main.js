@@ -295,8 +295,8 @@ $(function(){
     });
 
 
-    showPopup(".header-login__entry", '.popup-entry');
-    showPopup(".header-login__reg", '.popup-reg');
+    showPopup("#header-callback", '.popup-callback');
+    showPopup("#footer-callback", '.popup-callback');
 
 
 

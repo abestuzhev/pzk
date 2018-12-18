@@ -56,7 +56,7 @@
                 </ul>
                 <div class="header-contact">
                     <div class="header-phone"><a href="+7495777777">+7(495)777-777</a></div>
-                    <div class="header-callback"><a href="#" class="c-btn c-btn-default">Написать нам</a></div>
+                    <div class="header-callback"><a href="#" id="header-callback" class="c-btn c-btn-default">Написать нам</a></div>
                 </div>
                 <a href="#" class="header-mobile-btn"></a>
             </div>
@@ -622,12 +622,64 @@
             </div>
             <div class="footer-contact">
                 <div class="footer-phone"><a href="+7495777777">+7(495)777-777</a></div>
-                <div class="footer-callback"><a href="#" class="c-btn c-btn-default">Написать нам</a></div>
+                <div class="footer-callback"><a href="#" id="footer-callback" class="c-btn c-btn-default">Написать нам</a></div>
             </div>
         </div>
         <div class="footer-copyright">© 2018. Все права защищены</div>
     </div>
 </footer>
+
+<div class="mfp-wrap popup-callback" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="popup">
+                <h3 class="popup-title">Написать нам <span class="popup-close"></span></h3>
+                <div class="popup-body">
+                    <form action="#" class="popup-form" id="popup__write-to-us">
+                        <div class="popup-form__item">
+                            <label class="c-label" for="write-to-us__name">Ваше имя</label>
+                            <input class="c-input" type="text" placeholder="ваше имя" name="write-to-us__name"
+                                   id="write-to-us__name">
+                        </div>
+                        <div class="popup-form__item">
+                            <label class="c-label" for="write-to-us__email">Email<span class="c-obligatory-field">*</span></label>
+                            <input class="c-input" type="text" placeholder="укажите email" name="write-to-us__email" id="write-to-us__email" required>
+                        </div>
+                        <div class="popup-form__item">
+                            <label class="c-label" for="write-to-us__message">Ваше сообщение<span
+                                    class="c-obligatory-field">*</span></label>
+                            <textarea class="c-input" name="write-to-us__message" id="write-to-us__message" rows="4"
+                                      placeholder="текст сообщения" required></textarea>
+                        </div>
+                        <div class="popup-form__item">
+                            <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
+                        </div>
+                        <div class="popup-form__item">
+                            <div class="c-personal-data">
+                                <div class="c-personal-data__item">
+                                    <input type="checkbox" name="write-to-us__regulations" id="write-to-us__regulations" checked>
+                                    <label class="c-checkbox" for="write-to-us__regulations">Я ознакомлен с <a href="#">правилами
+                                        обработки</a> моих персональных данных.</label>
+                                </div>
+                                <div class="c-personal-data__item">
+                                    <input type="checkbox" name="write-to-us__dispatch" id="write-to-us__dispatch">
+                                    <label class="c-checkbox" for="write-to-us__dispatch">Я согласен получать рассылку с сайта на
+                                        электронную почту</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-btn l-btn--center">
+                            <button class="c-btn c-btn-default">Отправить</button>
+                        </div>
+                    </form>
+                </div><!--popup-body-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mfp-bg mfp-ready"></div>
+<!--задний фон модального окна-->
 
 
 
