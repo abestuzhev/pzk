@@ -139,6 +139,34 @@ table {
 div {
   display: block; }
 
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Light.eot");
+  src: url("../fonts/MyriadPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Light.woff") format("woff"), url("../fonts/MyriadPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-LightIt.eot");
+  src: url("../fonts/MyriadPro-LightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-LightIt.woff") format("woff"), url("../fonts/MyriadPro-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url("../fonts/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-It.eot");
+  src: url("../fonts/MyriadPro-It.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-It.woff") format("woff"), url("../fonts/MyriadPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+
 .c-symbol {
   display: inline-block;
   fill: #121214; }
@@ -169,7 +197,7 @@ div {
 html,
 body {
   height: 100%;
-  font-family: 'Roboto', sans-serif; }
+  font-family: sans-serif; }
 
 a {
   -webkit-transition: all .1s ease-in-out;
@@ -190,7 +218,7 @@ a {
   font-size: 18px; }
 
 .wrapper {
-  font-family: sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   position: relative;
   min-height: 100%;
   height: auto !important;
@@ -1319,11 +1347,11 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1331,9 +1359,12 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         -ms-flex: 1;
             flex: 1; }
     .header-menu__item a {
+      display: inline-block;
       text-decoration: none;
       font-size: 18px;
-      color: #101010; }
+      color: #101010;
+      padding: 0 10px;
+      margin-bottom: 6px; }
       .header-menu__item a:hover {
         color: #eb343e; }
   .header-contact {
@@ -1441,8 +1472,10 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       text-decoration: none;
       border-bottom: 2px solid #ec323d; }
     .banner-body span {
+      display: block;
       font-size: 100px;
-      color: #ec323d; }
+      color: #ec323d;
+      line-height: 1; }
 
 .c-title {
   font-size: 48px;
@@ -1541,7 +1574,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     .advantages-card__num {
       font-size: 100px;
       line-height: 1;
-      font-weight: 400;
+      font-weight: 700;
       color: #ea2830;
       margin-right: 15px; }
     .advantages-card__text {
@@ -1949,7 +1982,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         -ms-flex-align: stretch;
             align-items: stretch; }
     .scheme-list__item {
-      margin-bottom: 35px; }
+      margin-bottom: 35px;
+      width: 26%; }
     .scheme-list__arrow {
       margin-top: 100px;
       width: 43px;

@@ -104,6 +104,8 @@ $(function(){
         ]
     });
 
+
+
     $("#credit-range").ionRangeSlider({
         skin: "big",
         grid: true,

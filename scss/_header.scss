@@ -25,15 +25,18 @@
 
     &-menu {
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        flex-flow: row wrap;
+        justify-content: flex-start;
         align-items: center;
         flex: 1;
         &__item {
             a {
+                display: inline-block;
                 text-decoration: none;
                 font-size: 18px;
                 color: #101010;
+                padding: 0 10px;
+                margin-bottom: 6px;
 
                 &:hover {
                     color: #eb343e;

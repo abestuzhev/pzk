@@ -24,8 +24,10 @@
         }
 
         span {
+            display: block;
             font-size: 100px;
             color: #ec323d;
+            line-height: 1;
         }
 
     }
@@ -131,7 +133,7 @@
         &__num {
             font-size: 100px;
             line-height: 1;
-            font-weight: 400;
+            font-weight: 700;
             color: #ea2830;
             margin-right: 15px;
         }
@@ -647,6 +649,7 @@
         align-items: stretch;
         &__item {
             margin-bottom: 35px;
+            width: 26%;
         }
 
         &__arrow {
