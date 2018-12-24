@@ -1325,7 +1325,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   .header .c-layout {
     position: static; }
   .header-logo {
-    margin-right: 50px; }
+    margin-right: 25px; }
   .header-body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1368,7 +1368,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       .header-menu__item a:hover {
         color: #eb343e; }
   .header-contact {
-    margin-left: 50px; }
+    margin-left: 25px; }
   .header-callback a {
     width: 100%; }
   .header-phone {
@@ -1396,8 +1396,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1417,30 +1417,32 @@ input[type="checkbox"]:checked + .c-checkbox::after {
             justify-content: flex-start;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    padding-left: 60px; }
     .footer-menu__col {
-      margin-right: 40px;
-      margin-bottom: 20px; }
+      padding-right: 20px;
+      margin-bottom: 20px;
+      width: 30%; }
       .footer-menu__col:last-child {
         margin-right: 0; }
     .footer-menu__title {
       font-size: 20px;
       color: #0173a9;
-      margin-bottom: 13px;
-      white-space: nowrap; }
-    .footer-menu-list__item {
       margin-bottom: 13px; }
+    .footer-menu-list__item {
+      margin-bottom: 8px; }
       .footer-menu-list__item a {
         font-size: 16px;
         color: #101010;
-        text-decoration: none;
-        white-space: nowrap; }
+        text-decoration: none; }
         .footer-menu-list__item a:hover {
           color: #eb343e; }
   .footer-callback a {
-    width: 100%; }
+    width: 100%;
+    white-space: nowrap; }
   .footer-phone {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    white-space: nowrap; }
     .footer-phone a {
       font-size: 24px;
       color: #0173a8;
@@ -1450,6 +1452,29 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     text-align: center;
     font-size: 16px;
     color: #161616; }
+  .footer.v2 .footer-menu {
+    padding-left: 2rem; }
+  .footer.v2 .footer-menu__col {
+    margin-right: 0;
+    padding-right: 10px;
+    margin-bottom: 8px;
+    width: 50%; }
+  .footer.v2 .footer-menu__title {
+    margin-bottom: 7px; }
+  .footer.v2 .footer-menu-list__item {
+    display: inline-block;
+    position: relative;
+    padding: 0 3px; }
+  .footer.v2 .footer-menu-list__item a {
+    border-bottom: 1px dotted #000; }
+  .footer.v2 .footer-contact {
+    margin-top: 1rem; }
+  .footer.v2 .footer-menu-list__item::after {
+    content: '|';
+    position: absolute;
+    right: -3px;
+    top: 0;
+    color: #eee; }
 
 .banner {
   background: url(../img/banner-home.jpg) 0 0 no-repeat;

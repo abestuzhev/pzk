@@ -5,7 +5,7 @@
 
     &-body {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         justify-content: space-between;
         align-items: flex-start;
     }
@@ -19,9 +19,11 @@
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: flex-start;
+        padding-left: 60px;
         &__col {
-            margin-right: 40px;
+            padding-right: 20px;
             margin-bottom: 20px;
+            width: 30%;
 
             &:last-child {
                 margin-right: 0;
@@ -32,19 +34,19 @@
             font-size: 20px;
             color: #0173a9;
             margin-bottom: 13px;
-            white-space: nowrap;
+            //white-space: nowrap;
 
         }
 
         &-list {
             &__item {
-                margin-bottom: 13px;
+                margin-bottom: 8px;
 
                 a {
                     font-size: 16px;
                     color: #101010;
                     text-decoration: none;
-                    white-space: nowrap;
+                    //white-space: nowrap;
 
                     &:hover {
                         color: #eb343e;
@@ -62,11 +64,13 @@
 
         a {
             width: 100%;
+            white-space: nowrap;
         }
     }
 
     &-phone {
         margin-bottom: 10px;
+        white-space: nowrap;
         a {
             font-size: 24px;
             color: #0173a8;
@@ -79,5 +83,42 @@
         text-align: center;
         font-size: 16px;
         color: #161616;
+    }
+
+    &.v2 {
+        .footer-menu {
+            padding-left: 2rem;
+        }
+        .footer-menu__col {
+            margin-right: 0;
+            padding-right: 10px;
+            margin-bottom: 8px;
+            width: 50%;
+        }
+
+        .footer-menu__title {
+            margin-bottom: 7px;
+        }
+        .footer-menu-list__item {
+            display: inline-block;
+            position: relative;
+            padding: 0 3px;
+        }
+
+        .footer-menu-list__item a{
+            border-bottom: 1px dotted #000;
+        }
+
+        .footer-contact {
+            margin-top: 1rem;
+        }
+
+        .footer-menu-list__item::after {
+            content: '|';
+            position: absolute;
+            right: -3px;
+            top: 0;
+            color: #eee;
+        }
     }
 }
