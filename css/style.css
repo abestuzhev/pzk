@@ -1687,27 +1687,35 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       padding: 0 10px; }
   .license-card {
     text-align: center;
-    color: #ffffff; }
+    color: #ffffff;
+    padding: 20px;
+    background: #fff url("../img/border-license.png") 50% 50% no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .license-card__img {
       text-align: center;
       margin-bottom: 16px;
       position: relative;
-      background-color: #fff; }
-      .license-card__img::after {
-        content: '';
-        width: 100%;
-        position: absolute;
-        z-index: 10;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: url("../img/border-license.png") 50% 50% no-repeat;
-        background-size: cover; }
+      background-color: #fff;
+      overflow: hidden;
+      width: 200px; }
       .license-card__img img {
         width: 100%;
         height: auto;
-        padding: 34px 26px; }
+        display: block; }
+      .license-card__img a {
+        display: block; }
   .license .c-title {
     margin-bottom: 55px; }
 
