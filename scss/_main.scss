@@ -1,12 +1,12 @@
 .banner {
-    background: url(../img/banner-home.jpg) 0 0 no-repeat;
+    background: #fff url(../img/banner-home.jpg) 0 0 no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
 
     .c-layout {
         position: relative;
-        min-height: 680px;
+        min-height: 580px;
     }
 
     &-body {
@@ -247,10 +247,25 @@
         &__img {
             text-align: center;
             margin-bottom: 16px;
+            position: relative;
+            background-color: #fff;
+            &::after {
+                content: '';
+                width: 100%;
+                position: absolute;
+                z-index: 10;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: url('../img/border-license.png') 50% 50% no-repeat;
+                background-size: cover;
+            }
 
             img {
                 width: 100%;
                 height: auto;
+                padding: 34px 26px;
             }
         }
 
@@ -558,7 +573,12 @@
         text-align: center;
         &__img {
             text-align: center;
-            margin-bottom: 16px
+            margin-bottom: 16px;
+            height: 91px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
         }
 
         &__text {
@@ -645,11 +665,12 @@
     &-list {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: stretch;
         &__item {
             margin-bottom: 35px;
             width: 26%;
+            padding: 0 21px;
         }
 
         &__arrow {
@@ -659,7 +680,8 @@
             background: url(../img/icon-double-left.png) 0 0 no-repeat;
 
             &:last-child {
-                opacity: 0;
+                // opacity: 0;
+                display: none;
             }
         }
     }

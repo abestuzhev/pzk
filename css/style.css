@@ -1389,7 +1389,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   padding: 20px 0;
   background-color: #f3f3f3;
   -webkit-box-shadow: -0.763px -3.927px 7px 0px rgba(0, 0, 0, 0.17);
-          box-shadow: -0.763px -3.927px 7px 0px rgba(0, 0, 0, 0.17); }
+          box-shadow: -0.763px -3.927px 7px 0px rgba(0, 0, 0, 0.17);
+  font-family: 'Myriad Pro', sans-serif; }
   .footer-body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1477,12 +1478,12 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     color: #eee; }
 
 .banner {
-  background: url(../img/banner-home.jpg) 0 0 no-repeat;
+  background: #fff url(../img/banner-home.jpg) 0 0 no-repeat;
   background-size: cover;
   position: relative; }
   .banner .c-layout {
     position: relative;
-    min-height: 680px; }
+    min-height: 580px; }
   .banner-body {
     position: absolute;
     top: 50%;
@@ -1685,10 +1686,24 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     color: #ffffff; }
     .license-card__img {
       text-align: center;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      position: relative;
+      background-color: #fff; }
+      .license-card__img::after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: url("../img/border-license.png") 50% 50% no-repeat;
+        background-size: cover; }
       .license-card__img img {
         width: 100%;
-        height: auto; }
+        height: auto;
+        padding: 34px 26px; }
   .license .c-title {
     margin-bottom: 55px; }
 
@@ -1930,7 +1945,21 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     text-align: center; }
     .benefits-card__img {
       text-align: center;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      height: 91px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
     .benefits-card__text {
       max-width: 210px;
       font-size: 18px;
@@ -2000,22 +2029,23 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch; }
     .scheme-list__item {
       margin-bottom: 35px;
-      width: 26%; }
+      width: 26%;
+      padding: 0 21px; }
     .scheme-list__arrow {
       margin-top: 100px;
       width: 43px;
       height: 43px;
       background: url(../img/icon-double-left.png) 0 0 no-repeat; }
       .scheme-list__arrow:last-child {
-        opacity: 0; }
+        display: none; }
   .scheme-card {
     text-align: center; }
     .scheme-card__img {
