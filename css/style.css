@@ -1362,9 +1362,10 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       display: inline-block;
       text-decoration: none;
       font-size: 18px;
-      color: #101010;
+      color: #716e6e;
       padding: 0 10px;
-      margin-bottom: 6px; }
+      margin-bottom: 6px;
+      font-weight: 700; }
       .header-menu__item a:hover {
         color: #eb343e; }
   .header-contact {
@@ -1429,13 +1430,16 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     .footer-menu__title {
       font-size: 20px;
       color: #0173a9;
-      margin-bottom: 13px; }
+      margin-bottom: 13px;
+      font-weight: 700; }
     .footer-menu-list__item {
       margin-bottom: 8px; }
       .footer-menu-list__item a {
         font-size: 16px;
-        color: #101010;
-        text-decoration: none; }
+        color: #716e6e;
+        text-decoration: none;
+        font-family: 'Myriad Pro', sans-serif;
+        font-weight: 700; }
         .footer-menu-list__item a:hover {
           color: #eb343e; }
   .footer-callback a {
