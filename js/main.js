@@ -300,6 +300,14 @@ $(function(){
     showPopup("#header-callback", '.popup-callback');
     showPopup("#footer-callback", '.popup-callback');
 
+    $(document).on('click', '.license-card__img', function(){
+        console.log('click');
+        $(this).find('a').trigger('click');
+    });
+
+    
+
+
 
 
 });
