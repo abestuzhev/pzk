@@ -1595,14 +1595,14 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .advantages-card__num {
-      font-size: 100px;
+      font-size: 90px;
       line-height: 1;
       font-weight: 700;
       color: #ea2830;

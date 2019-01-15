@@ -127,11 +127,11 @@
         position: relative;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: center;
 
         &__num {
-            font-size: 100px;
+            font-size: 90px;
             line-height: 1;
             font-weight: 700;
             color: #ea2830;
