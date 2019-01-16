@@ -154,7 +154,7 @@ div {
   font-style: italic; }
 
 @font-face {
-  font-family: 'Myriad Pro Regular';
+  font-family: 'Myriad Pro';
   src: url("../fonts/MyriadPro-Regular.eot");
   src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -1364,8 +1364,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       font-size: 18px;
       color: #716e6e;
       padding: 0 10px;
-      margin-bottom: 6px;
-      font-weight: 700; }
+      margin-bottom: 6px; }
       .header-menu__item a:hover {
         color: #eb343e; }
   .header-contact {
@@ -1430,16 +1429,14 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     .footer-menu__title {
       font-size: 20px;
       color: #0173a9;
-      margin-bottom: 13px;
-      font-weight: 700; }
+      margin-bottom: 13px; }
     .footer-menu-list__item {
       margin-bottom: 8px; }
       .footer-menu-list__item a {
         font-size: 16px;
         color: #716e6e;
         text-decoration: none;
-        font-family: 'Myriad Pro', sans-serif;
-        font-weight: 700; }
+        font-family: 'Myriad Pro', sans-serif; }
         .footer-menu-list__item a:hover {
           color: #eb343e; }
   .footer-callback a {
@@ -1557,7 +1554,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       font-size: 21px;
       color: #ffffff;
       text-decoration: none;
-      font-weight: 300; }
+      font-weight: 400; }
   .services .c-title {
     color: #ffffff;
     border-color: #fff; }
