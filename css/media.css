@@ -104,6 +104,10 @@
         width: 43%;
     }
 
+    .useful-list__item {
+        width: 50%;
+    }
+
 
 }
 
@@ -187,7 +191,7 @@
     }
 
     .footer-menu {
-        justify-content: center;
+        /*justify-content: center;*/
     }
 
     .document .c-table-row {
@@ -360,6 +364,16 @@
 
     .calculator-range__total {
         margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 640px){
+    .useful-list__item {
+        width: 100%;
+    }
+
+    .useful-card__img {
+        margin-bottom: 10px;
     }
 }
 
