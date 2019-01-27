@@ -65,6 +65,7 @@
     }
 
     &-callback {
+        margin-bottom: 10px;
 
         a {
             width: 100%;
@@ -83,10 +84,50 @@
         }
     }
 
+    &-question {
+        text-align: center;
+
+        a {
+            font-size: 16px;
+            color: #eb343e;
+            text-decoration: underline;
+        }
+    }
+
     &-copyright {
+        position: relative;
         text-align: center;
         font-size: 16px;
         color: #161616;
+    }
+
+    &-social {
+        position: absolute;
+        top: -10px;
+        right: 37px;
+
+        &__list {
+
+        }
+
+        &__item {
+            padding: 0 6px;
+            display: inline-block;
+        }
+
+        .icon-vk {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #fff url(../img/icon-vk.png) 0 0 no-repeat;
+        }
+        .icon-fb {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #fff url(../img/icon-fb.png) 0 0 no-repeat;
+        }
+
     }
 
     &.v2 {

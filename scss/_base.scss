@@ -1442,3 +1442,45 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .irs--big .irs-single {
     background: #0173a9;
 }
+
+.content {
+    font-size: 18px;
+    ol {
+        padding-left: 20px;
+        margin-bottom: 14px;
+        li {
+            font-size: 18px;
+            list-style: decimal;
+        }
+    }
+
+    ul {
+        padding-left: 20px;
+        margin-bottom: 14px;
+        li {
+            font-size: 18px;
+            list-style: disc;
+        }
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 14px;
+        font-weight: 400;
+    }
+    h3 {
+        font-size: 24px;
+        margin-bottom: 14px;
+        font-weight: 400;
+    }
+    h4 {
+        font-size: 20px;
+        margin-bottom: 14px;
+        font-weight: 400;
+    }
+}
+

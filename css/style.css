@@ -1315,6 +1315,35 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .irs--big .irs-single {
   background: #0173a9; }
 
+.content {
+  font-size: 18px; }
+  .content ol {
+    padding-left: 20px;
+    margin-bottom: 14px; }
+    .content ol li {
+      font-size: 18px;
+      list-style: decimal; }
+  .content ul {
+    padding-left: 20px;
+    margin-bottom: 14px; }
+    .content ul li {
+      font-size: 18px;
+      list-style: disc; }
+  .content p {
+    margin-bottom: 10px; }
+  .content h2 {
+    font-size: 36px;
+    margin-bottom: 14px;
+    font-weight: 400; }
+  .content h3 {
+    font-size: 24px;
+    margin-bottom: 14px;
+    font-weight: 400; }
+  .content h4 {
+    font-size: 20px;
+    margin-bottom: 14px;
+    font-weight: 400; }
+
 .header {
   position: relative;
   z-index: 2;
@@ -1372,12 +1401,27 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   .header-callback a {
     width: 100%; }
   .header-phone {
-    margin-bottom: 10px; }
+    margin-bottom: 2px; }
     .header-phone a {
+      display: block;
       font-size: 24px;
       color: #0173a8;
       text-decoration: none;
       font-weight: 700; }
+  .header-mode {
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 6px; }
+    .header-mode::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 14px;
+      background: #fff url(../img/icon-clock.png) 0 0 no-repeat; }
   .header-mobile-btn {
     display: none;
     position: relative;
@@ -1439,9 +1483,11 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         font-family: 'Myriad Pro', sans-serif; }
         .footer-menu-list__item a:hover {
           color: #eb343e; }
-  .footer-callback a {
-    width: 100%;
-    white-space: nowrap; }
+  .footer-callback {
+    margin-bottom: 10px; }
+    .footer-callback a {
+      width: 100%;
+      white-space: nowrap; }
   .footer-phone {
     margin-bottom: 10px;
     white-space: nowrap; }
@@ -1450,10 +1496,34 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       color: #0173a8;
       text-decoration: none;
       font-weight: 700; }
+  .footer-question {
+    text-align: center; }
+    .footer-question a {
+      font-size: 16px;
+      color: #eb343e;
+      text-decoration: underline; }
   .footer-copyright {
+    position: relative;
     text-align: center;
     font-size: 16px;
     color: #161616; }
+  .footer-social {
+    position: absolute;
+    top: -10px;
+    right: 37px; }
+    .footer-social__item {
+      padding: 0 6px;
+      display: inline-block; }
+    .footer-social .icon-vk {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background: #fff url(../img/icon-vk.png) 0 0 no-repeat; }
+    .footer-social .icon-fb {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background: #fff url(../img/icon-fb.png) 0 0 no-repeat; }
   .footer.v2 .footer-menu {
     padding-left: 2rem; }
   .footer.v2 .footer-menu__col {
